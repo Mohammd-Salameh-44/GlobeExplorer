@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>GlobeExplorer</title>
+    <meta name="description" content="GlobeExplorer provides travel information for any city worldwide." />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style_result_page.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;800&display=swap" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="js/api.js" defer></script>
+    <script src="js/ui.js" defer></script>
+    <script src="js/main.js" defer></script>
+
+</head>
+
+<body>
+    <header class="app-header">
+        <h1 class="app-title">GlobeExplorer</h1>
+        <button id="btnHome" class="btn" type="button" onclick="window.location.href='index.html'">Home</button>
+    </header>
+
+    <div class="city-name">
+        <h2 id="cityTitle">City Name</h2>
+    </div>
+
+    <div class="accordion">
+        <details>
+            <summary>Weather</summary>
+            <div id="weatherContent">
+                <p><strong>Temperature:</strong> <span id="wTemp">--</span> °C</p>
+                <p><strong>Condition:</strong> <span id="wCond">--</span></p>
+                <p><strong>Humidity:</strong> <span id="wHum">--</span>%</p>
+                <p><strong>Wind:</strong> <span id="wWind">--</span> m/s</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>Attractions</summary>
+            <div id="attractionsContent">
+                <p>Loading attractions...</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>Hotels</summary>
+            <div id="hotelsContent">
+                <p>Loading hotels...</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>Map</summary>
+            <div id="mapContent">
+                <p>Loading map...</p>
+            </div>
+        </details>
+
+    </div>
+</body>
+
+</html>

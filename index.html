@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <title>GlobeExplorer</title>
+  <meta name="description" content="GlobeExplorer provides travel information for any city worldwide." />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style_index_page.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <!-- JS -->
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <header class="app-header">
+    <h1 class="app-title">GlobeExplorer</h1>
+    <p class="app-subtitle">Search for a city and get weather, attractions, hotels, and a map</p>
+  </header>
+
+  <main class="container">
+    <div class="search-section">
+      <input id="cityInput" class="inputBox" type="text"
+        placeholder="Enter a city name to explore travel information ..." />
+      <button id="searchBtn" class="btn" type="button">Search</button>
+    </div>
+
+    <div class="info-cards">
+      <div class="card">
+        <h2>Weather</h2>
+        <p>Get the current weather conditions for your chosen city.</p>
+      </div>
+      <div class="card">
+        <h2>Attractions</h2>
+        <p>Discover popular tourist attractions and landmarks in the city.</p>
+      </div>
+      <div class="card">
+        <h2>Hotels</h2>
+        <p>Find accommodation options and hotel recommendations.</p>
+      </div>
+      <div class="card">
+        <h2>Map</h2>
+        <p>View the city's location and nearby points of interest on a map.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <button id="btnPersonalDetails" class="btn" type="button" onclick="window.location.href='about.html'">Personal
+      Details</button>
+  </footer>
+</body>
+
+</html>
