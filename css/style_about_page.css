@@ -101,3 +101,102 @@ body {
     color: #4e5280;
     margin: 0 0 10px 30px;
 }
+
+
+
+/* =========================
+   Responsive Fix – About Page
+   ========================= */
+
+/* Tablets */
+@media (max-width: 900px) {
+
+    .app-header {
+        padding: 20px;
+        margin: 0 15px;
+    }
+
+    .app-header .app-title {
+        font-size: 2.8rem;
+    }
+
+    .about-container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .about-container h2 {
+        font-size: 1.7rem;
+    }
+
+    .about-container ul {
+        font-size: 1.1rem;
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+
+    /* Fix background lag on mobile */
+    body {
+        background-attachment: scroll;
+    }
+
+    .container {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .app-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        padding: 15px;
+        margin: 0;
+    }
+
+    .app-header .app-title {
+        font-size: 2.2rem;
+        margin-bottom: 5px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 250px;
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+
+    .about-container {
+        width: 100%;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .about-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-container ul {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-left: 20px;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+
+    .app-header .app-title {
+        font-size: 1.9rem;
+    }
+
+    .about-container h2 {
+        font-size: 1.3rem;
+    }
+
+    .about-container ul {
+        font-size: 0.95rem;
+    }
+}

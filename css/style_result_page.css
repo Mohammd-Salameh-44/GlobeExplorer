@@ -165,3 +165,130 @@ body {
     border: none;
     border-top: 2px solid #4e5280;
 }
+
+
+
+/* =========================
+   Responsive Fix – Mobile
+   (Add this at the END)
+   ========================= */
+
+/* Tablets */
+@media (max-width: 900px) {
+  .app-header {
+    padding: 20px;
+    margin: 0 15px;
+  }
+
+  .app-header .app-title {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+  }
+
+  .city-name,
+  .accordion {
+    width: 90%;
+  }
+
+  .accordion details {
+    padding: 14px 16px;
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+
+  /* Better scrolling on phones */
+  body {
+    background-attachment: scroll;
+  }
+
+  .container {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  /* Header becomes vertical */
+  .app-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    padding: 14px;
+    margin: 0;
+  }
+
+  .app-header .app-title {
+    font-size: 2.2rem;
+    line-height: 1.05;
+    margin-bottom: 0;
+  }
+
+  /* Buttons fit phone width */
+  .btn {
+    width: 100%;
+    max-width: 260px;
+    font-size: 1rem;
+    padding: 12px 18px;
+    margin-bottom: 10px;
+  }
+
+  /* City name box fits */
+  .city-name {
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    padding: 10px 14px;
+    border-radius: 14px;
+  }
+
+  .city-name h2 {
+    font-size: 1.2rem;
+  }
+
+  /* Accordion fits & text is readable */
+  .accordion {
+    width: 100%;
+  }
+
+  .accordion details {
+    padding: 12px 14px;
+    border-radius: 14px;
+  }
+
+  .accordion summary {
+    font-size: 1.05rem;
+  }
+
+  .accordion p,
+  .attraction-item p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* Remove hover jump on touch */
+  .btn:hover,
+  .accordion details:hover {
+    transform: none;
+  }
+
+  /* HR thinner on mobile */
+  .accordion hr {
+    border-top-width: 1px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+  .app-header .app-title {
+    font-size: 1.9rem;
+  }
+
+  .accordion summary {
+    font-size: 1rem;
+  }
+
+  .city-name h2 {
+    font-size: 1.1rem;
+  }
+}
