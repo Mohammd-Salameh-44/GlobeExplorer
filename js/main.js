@@ -1,14 +1,18 @@
 const searchBtn = document.getElementById("searchBtn");
 const cityInput = document.getElementById("cityInput");
+const errorMsg = document.getElementById("errorMsg");
 
 if (searchBtn && cityInput) {
+
     const goToResult = () => {
         const city = cityInput.value.trim();
 
         if (city === "") {
-            alert("Please enter a city name.");
+            errorMsg.textContent = "Please enter a city name.";
             return;
         }
+
+        errorMsg.textContent = ""; // يمسح الرسالة إذا كتب اسم
 
         localStorage.setItem("selectedCity", city);
         window.location.href = "result.html";
@@ -18,6 +22,10 @@ if (searchBtn && cityInput) {
 
     cityInput.addEventListener("keydown", (e) => {
         if (e.key === "Enter") goToResult();
+    });
+
+    cityInput.addEventListener("input", () => {
+        errorMsg.textContent = "";
     });
 }
 
