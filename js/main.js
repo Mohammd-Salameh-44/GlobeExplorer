@@ -8,11 +8,11 @@ if (searchBtn && cityInput) {
         const city = cityInput.value.trim();
 
         if (city === "") {
-            errorMsg.textContent = "Please enter a1 city name.";
+            errorMsg.textContent = "Please enter a city name.";
             return;
         }
 
-        errorMsg.textContent = ""; // يمسح الرسالة إذا كتب اسم
+        errorMsg.textContent = ""; 
 
         localStorage.setItem("selectedCity", city);
         window.location.href = "result.html";
