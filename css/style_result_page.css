@@ -41,6 +41,7 @@ body {
     font-weight: 850;
     color: #ffffff;
     margin-bottom: 15px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 /* ===== Buttons ===== */
