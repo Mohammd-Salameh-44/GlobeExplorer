@@ -235,7 +235,7 @@ body {
 
   /* City name box fits */
   .city-name {
-    width: 100%;
+    width: 90%;
     height: auto;
     min-height: 50px;
     padding: 10px 14px;
@@ -248,7 +248,7 @@ body {
 
   /* Accordion fits & text is readable */
   .accordion {
-    width: 100%;
+    width: 90%;
   }
 
   .accordion details {
@@ -275,20 +275,5 @@ body {
   /* HR thinner on mobile */
   .accordion hr {
     border-top-width: 1px;
-  }
-}
-
-/* Very small phones */
-@media (max-width: 380px) {
-  .app-header .app-title {
-    font-size: 1.9rem;
-  }
-
-  .accordion summary {
-    font-size: 1rem;
-  }
-
-  .city-name h2 {
-    font-size: 1.1rem;
   }
 }

@@ -23,31 +23,31 @@
 
 <body>
   <header class="app-header">
-    <h1 class="app-title">GlobeExplorer</h1>
-    <p class="app-subtitle">Search for a city and get weather, attractions, hotels, and a map</p>
+    <h1 class="app-title" title="The title of the site.">GlobeExplorer</h1>
+    <p class="app-subtitle" title="Site description.">Search for a city and get weather, attractions, hotels, and a map</p>
   </header>
 
   <main class="container">
     <div class="search-section">
       <input id="cityInput" class="inputBox" type="text"
-        placeholder="Enter a city name to explore travel information ..." />
-      <button id="searchBtn" class="btn" type="button">Search</button>
+        placeholder="Enter a city name to explore travel information ..." title="Input box." />
+      <button id="searchBtn" class="btn" type="button" title="Search about the selected city.">Search</button>
     </div>
 
     <div class="info-cards">
-      <div class="card">
+      <div class="card" title="Weather card.">
         <h2>Weather</h2>
         <p>Get the current weather conditions for your chosen city.</p>
       </div>
-      <div class="card">
+      <div class="card" title="Attractions card.">
         <h2>Attractions</h2>
         <p>Discover popular tourist attractions and landmarks in the city.</p>
       </div>
-      <div class="card">
+      <div class="card" title="Hotels card.">
         <h2>Hotels</h2>
         <p>Find accommodation options and hotel recommendations.</p>
       </div>
-      <div class="card">
+      <div class="card" title="Map card.">
         <h2>Map</h2>
         <p>View the city's location and nearby points of interest on a map.</p>
       </div>
@@ -55,7 +55,7 @@
   </main>
 
   <footer class="app-footer">
-    <button id="btnPersonalDetails" class="btn" type="button" onclick="window.location.href='about.html'">Personal
+    <button id="btnPersonalDetails" class="btn" type="button" onclick="window.location.href='about.html'" title="View personal details.">Personal
       Details</button>
   </footer>
 </body>

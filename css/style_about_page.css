@@ -169,7 +169,7 @@ body {
     }
 
     .about-container {
-        width: 100%;
+        width: 90%;
         padding: 20px;
         border-radius: 15px;
     }
@@ -185,18 +185,3 @@ body {
     }
 }
 
-/* Very small phones */
-@media (max-width: 380px) {
-
-    .app-header .app-title {
-        font-size: 1.9rem;
-    }
-
-    .about-container h2 {
-        font-size: 1.3rem;
-    }
-
-    .about-container ul {
-        font-size: 0.95rem;
-    }
-}
