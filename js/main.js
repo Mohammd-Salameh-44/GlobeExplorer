@@ -8,7 +8,7 @@ if (searchBtn && cityInput) {
         const city = cityInput.value.trim();
 
         if (city === "") {
-            errorMsg.textContent = "Please enter a city name.";
+            errorMsg.textContent = "Please enter a1 city name.";
             return;
         }
 
