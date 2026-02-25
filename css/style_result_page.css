@@ -302,12 +302,12 @@ div .divider {
 
   .container {
     width: 92%;
-    margin: 5px auto;
+    margin: 0 auto;
   }
 
   .search-section {
     width: 100%;
-    margin: 5px auto;
+    margin: 0 auto;
     gap: 10px;
   }
 
