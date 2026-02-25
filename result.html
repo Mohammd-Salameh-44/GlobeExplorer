@@ -26,47 +26,66 @@
 
 <body>
     <header class="app-header">
-        <h1 class="app-title" title="The title of the site." onclick="window.location.href='index.html'">GlobeExplorer</h1>
-        <button id="btnHome" class="btn" type="button" onclick="window.location.href='index.html'" title="Return to the main page.">Home</button>
+        <h1 class="app-title" title="The title of the site." onclick="window.location.href='index.html'">GlobeExplorer
+        </h1>
+        <button id="btnHome" class="btn" type="button" onclick="window.location.href='index.html'"
+            title="Return to the main page.">Home</button>
     </header>
+    <div>
+        <hr class="divider">
+    </div>>
 
-    <div class="city-name">
-        <h2 id="cityTitle" title="The name of the city being explored.">City Name</h2>
+    <div class="container">
+        <div class="search-section">
+            <input id="cityInput" class="inputBox" type="text"
+                placeholder="Enter a city name to explore travel information ..." title="Input box." />
+            <button id="searchBtn" class="btn" type="button" title="Search about the selected city.">Search</button>
+        </div>
+        <p id="errorMsg" class="error-message" title="Error message for invalid city input."></p>
+
+        <div class="city-name">
+            <h2 id="cityTitle" title="The name of the city being explored.">City Name</h2>
+        </div>
+
+        <div class="accordion">
+            <details>
+                <summary title="Weather information for the selected city.">Weather</summary>
+                <div id="weatherContent">
+                    <p><strong title="Temperature of the selected city.">Temperature:</strong> <span
+                            id="wTemp">--</span> °C</p>
+                    <p><strong title="Weather condition of the selected city.">Condition:</strong> <span
+                            id="wCond">--</span></p>
+                    <p><strong title="Humidity level of the selected city.">Humidity:</strong> <span
+                            id="wHum">--</span>%</p>
+                    <p><strong title="Wind speed of the selected city.">Wind:</strong> <span id="wWind">--</span> m/s
+                    </p>
+                </div>
+            </details>
+
+            <details>
+                <summary title="Attractions in the selected city.">Attractions</summary>
+                <div id="attractionsContent">
+                    <p>Loading attractions...</p>
+                </div>
+            </details>
+
+            <details>
+                <summary title="Hotels in the selected city.">Hotels</summary>
+                <div id="hotelsContent">
+                    <p>Loading hotels...</p>
+                </div>
+            </details>
+
+            <details>
+                <summary title="Map of the selected city.">Map</summary>
+                <div id="mapContent">
+                    <p>Loading map...</p>
+                </div>
+            </details>
+
+        </div>
     </div>
 
-    <div class="accordion">
-        <details>
-            <summary title="Weather information for the selected city.">Weather</summary>
-            <div id="weatherContent">
-                <p><strong title="Temperature of the selected city.">Temperature:</strong> <span id="wTemp">--</span> °C</p>
-                <p><strong title="Weather condition of the selected city.">Condition:</strong> <span id="wCond">--</span></p>
-                <p><strong title="Humidity level of the selected city.">Humidity:</strong> <span id="wHum">--</span>%</p>
-                <p><strong title="Wind speed of the selected city.">Wind:</strong> <span id="wWind">--</span> m/s</p>
-            </div>
-        </details>
-
-        <details>
-            <summary title="Attractions in the selected city.">Attractions</summary>
-            <div id="attractionsContent">
-                <p>Loading attractions...</p>
-            </div>
-        </details>
-
-        <details>
-            <summary title="Hotels in the selected city.">Hotels</summary>
-            <div id="hotelsContent">
-                <p>Loading hotels...</p>
-            </div>
-        </details>
-
-        <details>
-            <summary title="Map of the selected city.">Map</summary>
-            <div id="mapContent">
-                <p>Loading map...</p>
-            </div>
-        </details>
-
-    </div>
 </body>
 
 </html>

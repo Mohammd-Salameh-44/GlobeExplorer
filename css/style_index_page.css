@@ -1,222 +1,245 @@
 /* ===== Reset ===== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 
 /* ===== Base ===== */
 body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  min-height: 100vh;
 
-    font-family: 'Heebo', sans-serif;
-    color: #ffffff;
+  margin: 0;
 
-    background: url("../assets/images/backgroundImg.png") center / cover no-repeat fixed;
+  font-family: 'Heebo', sans-serif;
+  color: #ffffff;
+
+  background: url("../assets/images/backgroundImg.png") center / cover no-repeat fixed;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* ===== Layout ===== */
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 40px auto 0;
-    flex: 1;
-}
 
 /* ===== Header ===== */
 .app-header {
-    text-align: center;
-    padding: 20px;
-    margin-top: 70px;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  margin-top: 70px;
+
+  padding: 20px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .app-header .app-title {
-    font-size: 5rem;
-    font-weight: 850;
-    color: #ffffff;
+  font-size: 5.2rem;
+  font-weight: 850;
+
+  color: #ffffff;
 }
 
 .app-header .app-subtitle {
-    font-size: 1.6rem;
-    color: #ffffff;
-    margin-bottom: 0;
+  margin-bottom: 0;
+
+  font-size: 1.8rem;
+  color: #ffffff;
 }
+
 
 /* ===== Buttons ===== */
 .btn {
-    background-color: #4e5280;
-    color: #ffffff;
-    border: none;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-    
-    padding: 12px 24px;
-    border-radius: 10px;
+  margin-bottom: 20px;
 
-    font-size: 1rem;
-    cursor: pointer;
+  border-radius: 10px;
 
-    transition: 0.3s ease;
-    margin-bottom: 20px;
+  background-color: #4e5280;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  border: none;
+
+  padding: 12px 24px;
+  color: #ffffff;
+
+  font-size: 1rem;
+  cursor: pointer;
+
+  transition: 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #313352;
-    transform: translateY(-2px);
+  background-color: #313352;
+  transform: translateY(-2px);
 }
 
-/* ===== Search ===== */
-.search-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
 
-    text-align: center;
+/* ===== Layout ===== */
+.container {
+  width: 80%;
+  flex: 1;
+
+  margin: 40px auto 0;
+}
+
+
+/* ===== Search ===== */
+.container .search-section {
+  gap: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-section .inputBox {
-    width: 75%;
-    max-width: 650px;
-    height: 55px;
+  width: 60%;
+  height: 55px;
 
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
 
-    padding: 0 25px;
-    border-radius: 10px;
-    border: 0 solid #ffffff;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 
-    font-size: 1.2rem;
-    text-align: center;
+  border: 0 solid #ffffff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+
+  padding: 0 25px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.search-section .inputBox:hover {
+  box-shadow: 0 0 9px rgba(78, 82, 128, 0.8);
+}
+
+.search-section .inputBox:focus {
+  padding: 0 23px;
+
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  outline: none;
+  border: 2px solid #4e5280;
+  box-shadow: 0 0 6px rgba(78, 82, 128, 0.6);
+}
+
+.search-section .btn {
+  height: 55px;
+
+  margin-bottom: 0;
+
+  border-radius: 14px;
+
+  font-size: 1.4rem;
+
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 .error-message {
-  color: #eb0000;
+  width: 180px;
+
+  border-radius: 6px;
+
+  margin: 8px auto 0;
+
   background: rgba(255, 255, 255, 0.30);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+
+  color: #eb0000;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
   font-size: 0.9rem;
-  margin: 8px auto 0;
-  width: 180px;
   text-align: center;
 }
 
-.search-section .inputBox:focus {
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-
-    outline: none;
-    border: 2px solid #4e5280;
-    box-shadow: 0 0 6px rgba(78, 82, 128, 0.6);
-    padding: 0 23px;
-}
-
-.search-section .inputBox:hover {
-    box-shadow: 0 0 9px rgba(78, 82, 128, 0.8);
-}
-
-.search-section .btn {
-    height: 55px;
-
-    padding: 0 30px;
-    border-radius: 14px;
-
-    font-size: 1.4rem;
-    margin-bottom: 0;
-
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-}
 
 /* ===== Cards ===== */
 .info-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+  margin: 40px 0 20px;
 
-    margin: 40px 0 20px;
+  gap: 30px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .info-cards .card {
-    width: 100%;
-    min-height: 100px;
+  min-height: 100px;
 
-    padding: 30px;
-    border-radius: 18px;
+  padding: 30px;
+  border-radius: 18px;
 
-    background: rgba(255, 255, 255, 0.30);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.30);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 
-    transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .info-cards .card h2 {
-    font-size: 1.4rem;
-    color: #4e5280;
+  font-size: 1.4rem;
+  color: #4e5280;
 }
 
 .info-cards .card p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #4e5280;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4e5280;
 }
 
 .info-cards .card:hover {
-    transform: translateY(-6px);
-    background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.6);
+  transform: translateY(-6px);
 }
+
 
 /* ===== Footer ===== */
 .app-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding: 20px 0;
+  margin: 0 0 10px;
 
-    padding: 20px 0;
-    margin: 0 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
 
 
-/* =========================
-   Mobile / Responsive Fixes
-   (Paste this at the END of style_index_page.css)
-   ========================= */
-
 /* Tablets */
-@media (max-width: 900px) {
-  .container {
-    margin: 25px auto 0;
-  }
-
+@media (max-width: 1100px) {
   .app-header {
-    margin-top: 40px;
+    margin-top: 50px;
     padding: 16px;
   }
 
   .app-header .app-title {
-    font-size: 3.6rem;
+    font-size: 4.9rem;
   }
 
   .app-header .app-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+  }
+
+  .container {
+    margin: 30px auto 0;
+  }
+
+  .search-section .inputBox {
+    font-size: 1rem;
   }
 
   .info-cards {
@@ -228,59 +251,63 @@ body {
   }
 }
 
+
 /* Phones */
 @media (max-width: 600px) {
-  /* iOS/Android sometimes hate fixed background (causes lag/zoom issues) */
+
   body {
     background-attachment: scroll;
   }
 
-  .container {
-    width: 92%;
-    margin: 18px auto 0;
-  }
-
   .app-header {
-    margin-top: 22px;
+    width: 92%;
     padding: 12px;
+    gap: 20px;
   }
 
   .app-header .app-title {
-    font-size: 2.6rem;
+    margin-top: 25px;
+
+    font-size: 3.5em;
     line-height: 1.05;
   }
 
   .app-header .app-subtitle {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
-  /* Search row becomes nicer on phones */
+  .container {
+    width: 92%;
+    margin: 30px auto;
+  }
+
   .search-section {
-    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px auto;
     gap: 10px;
   }
 
   .search-section .inputBox {
-    width: 100%;
-    max-width: 100%;
+    width: 75%;
     height: 48px;
+
     font-size: 1rem;
     padding: 0 16px;
   }
 
   .search-section .inputBox:focus {
-    padding: 0 14px; /* keep same look when border appears */
+    padding: 0 14px;
   }
 
   .search-section .btn {
-    width: 100%;
+    width: 25%;
     height: 48px;
     font-size: 1.1rem;
     border-radius: 12px;
     padding: 0 18px;
   }
 
-  /* Cards: 1 column on phones so it won’t feel crowded */
+
   .info-cards {
     grid-template-columns: 1fr;
     gap: 14px;
@@ -301,10 +328,8 @@ body {
     line-height: 1.5;
   }
 
-  /* Reduce hover jump on touch devices */
+
   .info-cards .card:hover {
     transform: none;
   }
 }
-
-
