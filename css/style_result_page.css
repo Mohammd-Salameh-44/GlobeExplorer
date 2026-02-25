@@ -304,16 +304,17 @@ div .divider {
   }
 
   .search-section {
+    width: 100%;
+    margin: 20px auto;
     gap: 10px;
   }
 
   .search-section .inputBox {
-    width: 80%;
+    width: 75%;
     height: 48px;
 
-    padding: 0 16px;
-
     font-size: 1rem;
+    padding: 0 16px;
   }
 
   .search-section .inputBox:focus {
@@ -321,13 +322,11 @@ div .divider {
   }
 
   .search-section .btn {
+    width: 25%;
     height: 48px;
-
-    padding: 0 18px;
-
-    border-radius: 12px;
-
     font-size: 1.1rem;
+    border-radius: 12px;
+    padding: 0 18px;
   }
 
   .city-name h2 {
