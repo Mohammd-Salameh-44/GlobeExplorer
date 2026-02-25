@@ -297,6 +297,7 @@ div .divider {
 
   div .divider {
     width: 95%;
+    margin-bottom: 0;
   }
 
   .container {
