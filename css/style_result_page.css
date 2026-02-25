@@ -45,7 +45,7 @@ body {
 
 /* ===== Buttons ===== */
 .btn {
-  padding: 14px 25px;
+  padding: 12px 24px;
   margin-bottom: 20px;
 
   border: none;
@@ -102,7 +102,7 @@ div .divider {
 }
 
 .search-section .inputBox {
-  width: 90%;
+  width: 60%;
   height: 55px;
 
   border-radius: 10px;
@@ -136,7 +136,7 @@ div .divider {
 }
 
 .search-section .btn {
-  max-width: 20%;
+  /* max-width: 20%; */
   height: 55px;
 
   margin-bottom: 0;
