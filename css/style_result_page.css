@@ -285,11 +285,11 @@ div .divider {
   }
 
   .app-header .app-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .btn {
-    width: 20%;
+    width: 25%;
     font-size: 1rem;
     padding: 12px 20px;
   }
@@ -308,6 +308,7 @@ div .divider {
   }
 
   .search-section .inputBox {
+    width: 80%;
     height: 48px;
 
     padding: 0 16px;
