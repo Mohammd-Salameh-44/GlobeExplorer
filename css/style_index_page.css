@@ -67,6 +67,7 @@ body {
 
   font-size: 1rem;
   cursor: pointer;
+  text-align: center;
 
   transition: 0.3s ease;
 }
