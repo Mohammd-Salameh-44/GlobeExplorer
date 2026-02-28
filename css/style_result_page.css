@@ -330,9 +330,9 @@ div .divider {
   }
 
   .app-header .btn {
-    height: 45px;
-    padding: 11px 22px;
-    font-size: 1.1rem;
+    height: 40px;
+    padding: 11px 20px;
+    font-size: 1rem;
   }
 
   .btn {
