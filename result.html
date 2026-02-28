@@ -2,82 +2,129 @@
 <html lang="en" dir="ltr">
 
 <head>
+    <!-- הגדרת קידוד תווים -->
     <meta charset="utf-8" />
+
+    <!-- רספונסיביות למובייל -->
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+    <!-- צבע ערכת נושא בדפדפנים במובייל -->
     <meta name="theme-color" content="#4e5280" />
 
+    <!-- כותרת הדף -->
     <title>GlobeExplorer</title>
+
+    <!-- תיאור הדף לצורכי SEO -->
     <meta name="description" content="GlobeExplorer provides travel information for any city worldwide." />
 
-    <!-- CSS -->
+    <!-- קובץ עיצוב לעמוד התוצאות -->
     <link rel="stylesheet" href="css/style_result_page.css" />
 
-    <!-- Fonts -->
+    <!-- טעינת פונטים -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;800&display=swap" rel="stylesheet" />
 
-    <!-- JS -->
+    <!-- קבצי JavaScript (API, ממשק, לוגיקה כללית) -->
     <script src="js/api.js" defer></script>
     <script src="js/ui.js" defer></script>
     <script src="js/main.js" defer></script>
-
 </head>
 
 <body>
+
+    <!-- כותרת עליונה עם ניווט חזרה לדף הבית -->
     <header class="app-header">
-        <h1 class="app-title" title="The title of the site." onclick="window.location.href='index.html'">GlobeExplorer
+        <h1 class="app-title" title="The title of the site." onclick="window.location.href='index.html'">
+            GlobeExplorer
         </h1>
+
         <button id="btnHome" class="btn" type="button" onclick="window.location.href='index.html'"
-            title="Return to the main page.">Home</button>
+            title="Return to the main page.">
+            Home
+        </button>
     </header>
+
+    <!-- קו מפריד -->
     <div>
         <hr class="divider">
     </div>>
 
+    <!-- תוכן ראשי של עמוד התוצאות -->
     <div class="container">
+
+        <!-- אזור חיפוש חוזר -->
         <div class="search-section">
             <input id="cityInput" class="inputBox" type="text"
                 placeholder="Enter a city name to explore travel information ..." title="Input box." />
-            <button id="searchBtn" class="btn" type="button" title="Search about the selected city.">Search</button>
+
+            <button id="searchBtn" class="btn" type="button" title="Search about the selected city.">
+                Search
+            </button>
         </div>
+
+        <!-- הודעת שגיאה אם שם העיר היה ריק -->
         <p id="errorMsg" class="error-message" title="Error message for invalid city input."></p>
 
+        <!-- הצגת שם העיר שנבחרה -->
         <div class="city-name">
-            <h2 id="cityTitle" title="The name of the city being explored.">City Name</h2>
+            <h2 id="cityTitle" title="The name of the city being explored.">
+                City Name
+            </h2>
         </div>
 
+        <!-- אזור מידע מפורט (Accordion) -->
         <div class="accordion">
+
+            <!-- פרטי מזג אוויר -->
             <details>
-                <summary title="Weather information for the selected city.">Weather</summary>
+                <summary title="Weather information for the selected city.">
+                    Weather
+                </summary>
+
                 <div id="weatherContent">
-                    <p><strong title="Temperature of the selected city.">Temperature:</strong> <span
-                            id="wTemp">--</span> °C</p>
-                    <p><strong title="Weather condition of the selected city.">Condition:</strong> <span
-                            id="wCond">--</span></p>
-                    <p><strong title="Humidity level of the selected city.">Humidity:</strong> <span
-                            id="wHum">--</span>%</p>
-                    <p><strong title="Wind speed of the selected city.">Wind:</strong> <span id="wWind">--</span> m/s
-                    </p>
+                    <p><strong title="Temperature of the selected city.">
+                            Temperature:</strong> <span id="wTemp">--</span> °C</p>
+
+                    <p><strong title="Weather condition of the selected city.">
+                            Condition:</strong> <span id="wCond">--</span></p>
+
+                    <p><strong title="Humidity level of the selected city.">
+                            Humidity:</strong> <span id="wHum">--</span>%</p>
+
+                    <p><strong title="Wind speed of the selected city.">
+                            Wind:</strong> <span id="wWind">--</span> m/s</p>
                 </div>
             </details>
 
+            <!-- אטרקציות -->
             <details>
-                <summary title="Attractions in the selected city.">Attractions</summary>
+                <summary title="Attractions in the selected city.">
+                    Attractions
+                </summary>
+
                 <div id="attractionsContent">
                     <p>Loading attractions...</p>
                 </div>
             </details>
 
+            <!-- מלונות -->
             <details>
-                <summary title="Hotels in the selected city.">Hotels</summary>
+                <summary title="Hotels in the selected city.">
+                    Hotels
+                </summary>
+
                 <div id="hotelsContent">
                     <p>Loading hotels...</p>
                 </div>
             </details>
 
+            <!-- מפה -->
             <details>
-                <summary title="Map of the selected city.">Map</summary>
+                <summary title="Map of the selected city.">
+                    Map
+                </summary>
+
                 <div id="mapContent">
                     <p>Loading map...</p>
                 </div>

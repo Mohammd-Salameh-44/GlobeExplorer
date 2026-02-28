@@ -1,29 +1,39 @@
 /* ===== Reset ===== */
+/* איפוס ברירת מחדל לכל האלמנטים בדף */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* כולל padding ו-border בתוך הרוחב */
 }
 
 
 /* ===== Base ===== */
+/* עיצוב בסיסי של גוף האתר */
 body {
   min-height: 100vh;
+  /* גובה מינימלי בגובה המסך */
 
   margin: 0;
 
   font-family: 'Heebo', sans-serif;
+  /* פונט ראשי */
   color: #ffffff;
+  /* צבע טקסט כללי */
 
+  /* תמונת רקע מלאה ומקובעת */
   background: url("../assets/images/backgroundImg.png") center / cover no-repeat fixed;
 
   display: flex;
   flex-direction: column;
+  /* סידור אנכי */
   align-items: center;
+  /* מרכז אופקית */
 }
 
 
 /* ===== Header ===== */
+/* אזור כותרת האתר */
 .app-header {
   width: 80%;
   margin-top: 70px;
@@ -37,6 +47,7 @@ body {
   align-items: center;
 }
 
+/* כותרת ראשית */
 .app-header .app-title {
   font-size: 5.2rem;
   font-weight: 850;
@@ -44,15 +55,18 @@ body {
   color: #ffffff;
 }
 
+/* תת כותרת */
 .app-header .app-subtitle {
   margin-bottom: 0;
 
   font-size: 1.8rem;
+
   color: #ffffff;
 }
 
 
 /* ===== Buttons ===== */
+/* עיצוב כללי לכפתורים */
 .btn {
   margin-bottom: 20px;
 
@@ -70,8 +84,10 @@ body {
   text-align: center;
 
   transition: 0.3s ease;
+  /* אנימציה חלקה */
 }
 
+/* אפקט מעבר עכבר */
 .btn:hover {
   background-color: #313352;
   transform: translateY(-2px);
@@ -79,15 +95,18 @@ body {
 
 
 /* ===== Layout ===== */
+/* אזור תוכן מרכזי */
 .container {
   width: 80%;
   flex: 1;
+  /* ממלא את השטח הפנוי */
 
   margin: 40px auto 0;
 }
 
 
 /* ===== Search ===== */
+/* אזור החיפוש */
 .container .search-section {
   gap: 15px;
 
@@ -96,6 +115,7 @@ body {
   align-items: center;
 }
 
+/* שדה קלט */
 .search-section .inputBox {
   width: 60%;
   height: 55px;
@@ -114,10 +134,12 @@ body {
   text-align: center;
 }
 
+/* אפקט hover לשדה */
 .search-section .inputBox:hover {
   box-shadow: 0 0 9px rgba(78, 82, 128, 0.8);
 }
 
+/* אפקט focus לשדה */
 .search-section .inputBox:focus {
   padding: 0 23px;
 
@@ -130,6 +152,7 @@ body {
   box-shadow: 0 0 6px rgba(78, 82, 128, 0.6);
 }
 
+/* כפתור חיפוש */
 .search-section .btn {
   height: 55px;
 
@@ -142,6 +165,7 @@ body {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
+/* הודעת שגיאה */
 .error-message {
   width: 180px;
 
@@ -162,6 +186,7 @@ body {
 
 
 /* ===== Cards ===== */
+/* גריד של כרטיסי מידע */
 .info-cards {
   margin: 40px 0 20px;
 
@@ -169,8 +194,10 @@ body {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
+  /* שתי עמודות */
 }
 
+/* כרטיס יחיד */
 .info-cards .card {
   min-height: 100px;
 
@@ -190,17 +217,20 @@ body {
   transition: 0.3s ease;
 }
 
+/* כותרת בכרטיס */
 .info-cards .card h2 {
   font-size: 1.4rem;
   color: #4e5280;
 }
 
+/* טקסט בכרטיס */
 .info-cards .card p {
   font-size: 1rem;
   line-height: 1.6;
   color: #4e5280;
 }
 
+/* אפקט hover לכרטיס */
 .info-cards .card:hover {
   background: rgba(255, 255, 255, 0.6);
   transform: translateY(-6px);
@@ -208,6 +238,7 @@ body {
 
 
 /* ===== Footer ===== */
+/* אזור תחתון */
 .app-footer {
   padding: 20px 0;
   margin: 0 0 10px;
@@ -218,10 +249,12 @@ body {
 }
 
 
-
-
-/* Tablets */
+/* =========================
+   Tablets
+   ========================= */
+/* התאמות למסכים בינוניים */
 @media (max-width: 1100px) {
+
   .app-header {
     margin-top: 50px;
     padding: 16px;
@@ -253,11 +286,15 @@ body {
 }
 
 
-/* Phones */
+/* =========================
+   Phones
+   ========================= */
+/* התאמות למסכים קטנים */
 @media (max-width: 600px) {
 
   body {
     background-attachment: scroll;
+    /* ביטול fixed במובייל */
   }
 
   .app-header {
@@ -311,6 +348,7 @@ body {
 
   .info-cards {
     grid-template-columns: 1fr;
+    /* עמודה אחת במובייל */
     gap: 14px;
     margin: 22px 0 14px;
   }
@@ -332,5 +370,6 @@ body {
 
   .info-cards .card:hover {
     transform: none;
+    /* ביטול קפיצה במובייל */
   }
 }

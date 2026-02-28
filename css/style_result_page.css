@@ -1,37 +1,48 @@
 /* ===== Reset ===== */
+/* איפוס מרווחים והגדרות ברירת מחדל */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* כולל padding ו-border בתוך הרוחב */
 }
 
 
 /* ===== Base ===== */
+/* עיצוב בסיסי של גוף הדף */
 body {
   min-height: 100vh;
+  /* גובה מינימלי בגובה המסך */
 
   margin: 0;
 
   font-family: 'Heebo', sans-serif;
+  /* פונט ראשי */
   color: #ffffff;
 
+  /* תמונת רקע מלאה וקבועה */
   background: url("../assets/images/backgroundImg.png") center / cover no-repeat fixed;
 
   display: flex;
   flex-direction: column;
+  /* סידור אנכי */
 }
 
 
 /* ===== Header ===== */
+/* אזור כותרת עליונה */
 .app-header {
   padding: 30px 30px 10px 30px;
   margin: 0 30px;
 
   display: flex;
   align-items: center;
+  /* יישור אנכי */
   justify-content: space-between;
+  /* ריווח בין האלמנטים */
 }
 
+/* כותרת ראשית */
 .app-header .app-title {
   margin-bottom: 15px;
 
@@ -44,7 +55,9 @@ body {
 
 
 /* ===== Buttons ===== */
+/* עיצוב כללי לכפתורים */
 .btn {
+  height: 55px;
   padding: 12px 24px;
   margin-bottom: 20px;
 
@@ -56,13 +69,15 @@ body {
 
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 
-  font-size: 1rem;
+  font-size: 1.4rem;
   cursor: pointer;
   text-align: center;
 
   transition: 0.3s ease;
+  /* אנימציה חלקה */
 }
 
+/* אפקט ריחוף */
 .btn:hover {
   background-color: #313352;
   transform: translateY(-2px);
@@ -70,6 +85,7 @@ body {
 
 
 /* ==== Divider Line ==== */
+/* קו מפריד בין אזורים */
 div .divider {
   height: 4px;
   width: 85%;
@@ -84,15 +100,18 @@ div .divider {
 
 
 /* ===== Layout ===== */
+/* קונטיינר מרכזי */
 .container {
   width: 85%;
   flex: 1;
+  /* ממלא שטח פנוי */
 
   margin: 15px auto 0;
 }
 
 
 /* ===== Search Section ===== */
+/* אזור החיפוש */
 .container .search-section {
   gap: 15px;
 
@@ -101,6 +120,7 @@ div .divider {
   align-items: center;
 }
 
+/* שדה קלט */
 .search-section .inputBox {
   width: 60%;
   height: 55px;
@@ -119,10 +139,12 @@ div .divider {
   text-align: center;
 }
 
+/* אפקט hover */
 .search-section .inputBox:hover {
   box-shadow: 0 0 9px rgba(78, 82, 128, 0.8);
 }
 
+/* אפקט focus */
 .search-section .inputBox:focus {
   padding: 0 23px;
 
@@ -135,19 +157,13 @@ div .divider {
   box-shadow: 0 0 6px rgba(78, 82, 128, 0.6);
 }
 
+/* כפתור חיפוש */
 .search-section .btn {
-  /* max-width: 20%; */
-  height: 55px;
 
   margin-bottom: 0;
-
-  border-radius: 14px;
-
-  font-size: 1.4rem;
-
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
+/* הודעת שגיאה */
 .error-message {
   width: 180px;
 
@@ -166,7 +182,9 @@ div .divider {
   text-align: center;
 }
 
+
 /* ===== City Name ===== */
+/* תיבת שם העיר */
 .container .city-name {
   max-width: fit-content;
   height: 55px;
@@ -187,6 +205,7 @@ div .divider {
   justify-content: center;
 }
 
+/* כותרת שם העיר */
 .city-name h2 {
   font-size: 1.5rem;
   font-weight: 850;
@@ -196,10 +215,12 @@ div .divider {
 
 
 /* ===== Accordion ===== */
+/* אזור מידע מתקפל */
 .container .accordion {
   margin: 15px auto;
 }
 
+/* כרטיס מתקפל */
 .accordion details {
   padding: 15px 20px;
   margin-bottom: 15px;
@@ -215,11 +236,13 @@ div .divider {
   cursor: pointer;
 }
 
+/* מצב פתוח או hover */
 .accordion details[open],
 .accordion details:hover {
   background: rgba(255, 255, 255, 0.85);
 }
 
+/* כותרת מתקפלת */
 .accordion summary {
   list-style: none;
 
@@ -228,11 +251,13 @@ div .divider {
   color: #4e5280;
 }
 
+/* טקסט פנימי */
 .accordion p {
   margin-top: 10px;
   color: #4e5280;
 }
 
+/* קו מפריד פנימי */
 .accordion hr {
   margin: 15px 0;
 
@@ -242,11 +267,13 @@ div .divider {
 
 
 /* ===== Attractions / Links ===== */
+/* טקסט באטרקציות */
 .attraction-item p {
   margin: 6px 0;
   color: #4e5280;
 }
 
+/* קישורים */
 .attraction-item a,
 .accordion a {
   color: #006eff;
@@ -255,9 +282,12 @@ div .divider {
 }
 
 
-
-/* Tablets */
+/* =========================
+   Tablets
+   ========================= */
+/* התאמות למסכים בינוניים */
 @media (max-width: 900px) {
+
   .app-header {
     padding: 20px 20px 10px 20px;
     margin: 0 15px;
@@ -273,10 +303,15 @@ div .divider {
 }
 
 
-/* Phones */
+/* =========================
+   Phones
+   ========================= */
+/* התאמות למסכים קטנים */
 @media (max-width: 600px) {
+
   body {
     background-attachment: scroll;
+    /* ביטול fixed במובייל */
   }
 
   .app-header {
@@ -290,9 +325,11 @@ div .divider {
   }
 
   .btn {
-    width: 25%;
-    font-size: 1rem;
-    padding: 12px 20px;
+    width: 15%;
+    height: 48px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    padding: 0 18px;
   }
 
   div .divider {
@@ -325,10 +362,7 @@ div .divider {
 
   .search-section .btn {
     width: 25%;
-    height: 48px;
-    font-size: 1.1rem;
-    border-radius: 12px;
-    padding: 0 18px;
+
   }
 
   .city-name h2 {
@@ -353,6 +387,7 @@ div .divider {
   .btn:hover,
   .accordion details:hover {
     transform: none;
+    /* ביטול אפקט קפיצה במובייל */
   }
 
   .accordion hr {

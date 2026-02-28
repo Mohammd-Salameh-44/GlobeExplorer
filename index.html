@@ -2,65 +2,100 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <!-- הגדרת קידוד תווים -->
   <meta charset="utf-8" />
+
+  <!-- הגדרה לרספונסיביות במובייל -->
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+  <!-- צבע ערכת נושא לדפדפנים במובייל -->
   <meta name="theme-color" content="#4e5280" />
 
+  <!-- כותרת הדף -->
   <title>GlobeExplorer</title>
+
+  <!-- תיאור האתר לצורכי SEO -->
   <meta name="description" content="GlobeExplorer provides travel information for any city worldwide." />
 
-  <!-- CSS -->
+  <!-- קישור לקובץ עיצוב -->
   <link rel="stylesheet" href="css/style_index_page.css" />
 
-  <!-- Fonts -->
+  <!-- טעינת פונטים חיצוניים -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;800&display=swap" rel="stylesheet" />
 
-  <!-- JS -->
+  <!-- קישור לקובץ JavaScript -->
   <script src="js/main.js" defer></script>
 </head>
 
 <body>
+
+  <!-- אזור כותרת ראשי של האתר -->
   <header class="app-header">
     <h1 class="app-title" title="The title of the site.">GlobeExplorer</h1>
-    <p class="app-subtitle" title="Site description.">Search for a city and get weather, attractions, hotels, and a map
+    <p class="app-subtitle" title="Site description.">
+      Search for a city and get weather, attractions, hotels, and a map
     </p>
   </header>
 
+  <!-- תוכן מרכזי -->
   <main class="container">
+
+    <!-- אזור חיפוש עיר -->
     <div class="search-section">
+      <!-- שדה קלט להזנת שם עיר -->
       <input id="cityInput" class="inputBox" type="text"
         placeholder="Enter a city name to explore travel information ..." title="Input box." />
-      <button id="searchBtn" class="btn" type="button" title="Search about the selected city.">Search</button>
+
+      <!-- כפתור חיפוש -->
+      <button id="searchBtn" class="btn" type="button" title="Search about the selected city.">
+        Search
+      </button>
     </div>
+
+    <!-- הודעת שגיאה במידה והקלט היה ריק -->
     <p id="errorMsg" class="error-message" title="Error message for invalid city input."></p>
 
+    <!-- כרטיסי מידע ראשיים -->
     <div class="info-cards">
+
+      <!-- כרטיס מזג אוויר -->
       <div class="card" title="Weather card.">
         <h2>Weather</h2>
         <p>Get the current weather conditions for your chosen city.</p>
       </div>
+
+      <!-- כרטיס אטרקציות -->
       <div class="card" title="Attractions card.">
         <h2>Attractions</h2>
         <p>Discover popular tourist attractions and landmarks in the city.</p>
       </div>
+
+      <!-- כרטיס מלונות -->
       <div class="card" title="Hotels card.">
         <h2>Hotels</h2>
         <p>Find accommodation options and hotel recommendations.</p>
       </div>
+
+      <!-- כרטיס מפה -->
       <div class="card" title="Map card.">
         <h2>Map</h2>
         <p>View the city's location and nearby points of interest on a map.</p>
       </div>
+
     </div>
   </main>
 
+  <!-- תחתית הדף -->
   <footer class="app-footer">
+    <!-- כפתור מעבר לעמוד פרטים אישיים -->
     <button id="btnPersonalDetails" class="btn" type="button" onclick="window.location.href='about.html'"
-      title="View personal details.">Personal
-      Details</button>
+      title="View personal details.">
+      Personal Details
+    </button>
   </footer>
+
 </body>
 
 </html>
