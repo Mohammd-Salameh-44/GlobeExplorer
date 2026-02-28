@@ -225,7 +225,7 @@ div .divider {
 /* כרטיס מתקפל */
 .accordion details {
   padding: 15px 20px;
-  margin-bottom: 15px;
+  margin-top: 15px;
 
   border-radius: 12px;
 
@@ -291,7 +291,7 @@ div .divider {
 @media (max-width: 900px) {
 
   .app-header {
-    padding: 20px 20px 10px 20px;
+    padding: 20px;
     margin: 0 15px;
   }
 
@@ -318,8 +318,8 @@ div .divider {
 
   .app-header {
     gap: 15px;
-    padding: 15px 15px 5px 15px;
-    margin: 5px 0;
+    padding: 15px;
+    /* margin: 5px 0; */
   }
 
   .app-header .app-title {
