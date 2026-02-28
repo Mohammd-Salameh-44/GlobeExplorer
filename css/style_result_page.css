@@ -307,7 +307,7 @@ div .divider {
    Phones
    ========================= */
 /* התאמות למסכים קטנים */
-@media (max-width: 600px) {
+@media (max-width: 500px) {
 
   body {
     background-attachment: scroll;
@@ -325,7 +325,7 @@ div .divider {
   }
 
   .btn {
-    width: 27%;
+    width: 100px;
     height: 48px;
     font-size: 1.1rem;
     border-radius: 12px;
