@@ -298,7 +298,13 @@ div .divider {
   }
 
   .app-header .app-title {
-    font-size: 2.8rem;
+    font-size: 3rem;
+  }
+
+  .app-header .btn {
+    height: 50px;
+    padding: 11px 22px;
+    font-size: 1.2rem;
   }
 
   .accordion details {
@@ -321,6 +327,12 @@ div .divider {
 
   .app-header .app-title {
     font-size: 2rem;
+  }
+
+  .app-header .btn {
+    height: 50px;
+    padding: 11px 22px;
+    font-size: 1.2rem;
   }
 
   .btn {
