@@ -106,7 +106,9 @@ div .divider {
   flex: 1;
   /* ממלא שטח פנוי */
 
-  margin: 15px auto 0;
+  display: block;
+  align-items: center;
+  margin: 40px auto;
 }
 
 
@@ -115,7 +117,7 @@ div .divider {
 .container .search-section {
   gap: 15px;
 
-  margin-top: 30px;
+
 
   display: flex;
   justify-content: center;
@@ -311,14 +313,11 @@ div .divider {
 /* התאמות למסכים קטנים */
 @media (max-width: 500px) {
 
-  body {
-    background-attachment: scroll;
-    /* ביטול fixed במובייל */
-  }
+  
 
   .app-header {
     gap: 15px;
-    padding: 15px;
+    padding: 15px 7px 15px 7px;
     /* margin: 5px 0; */
   }
 
@@ -341,7 +340,7 @@ div .divider {
 
   .container {
     width: 92%;
-    margin: 0 auto;
+    margin: 30px auto;
   }
 
   .container .search-section {

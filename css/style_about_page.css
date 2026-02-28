@@ -99,15 +99,7 @@ div .divider {
 }
 
 
-/* ===== Layout ===== */
-/* קונטיינר ראשי */
-.container {
-    width: 90%;
-    flex: 1;
-    /* ממלא שטח פנוי */
 
-    margin: 40px auto;
-}
 
 
 /* ===== About Section ===== */
@@ -115,7 +107,7 @@ div .divider {
 .about-container {
     width: 80%;
 
-    margin: 30px auto;
+    margin: 40px auto;
 
     padding: 30px;
     border-radius: 18px;
@@ -164,8 +156,7 @@ div .divider {
 @media (max-width: 900px) {
 
     .app-header {
-        padding: 20px 20px 10px 20px;
-        margin: 0 15px;
+        padding: 20px;
     }
 
     .app-header .app-title {
@@ -192,15 +183,9 @@ div .divider {
 /* התאמות למסכים קטנים */
 @media (max-width: 500px) {
 
-    body {
-        background-attachment: scroll;
-        /* ביטול fixed במובייל */
-    }
-
     .app-header {
-        gap: 15px;
-        padding: 15px 15px 5px 15px;
-        margin: 5px 0;
+        padding: 15px ;
+        /* margin: 5px 0; */
     }
 
     .app-header .app-title {
