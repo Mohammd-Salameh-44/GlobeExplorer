@@ -33,8 +33,8 @@ body {
 /* ===== Header ===== */
 /* אזור הכותרת העליונה */
 .app-header {
-  padding: 30px 30px 10px 30px;
-  margin: 0 30px;
+  padding: 15px 30px 15px 30px;
+  margin: 0;
 
   display: flex;
   align-items: center;
@@ -45,7 +45,6 @@ body {
 
 /* כותרת ראשית */
 .app-header .app-title {
-  margin-bottom: 15px;
 
   font-size: 3.5rem;
   font-weight: 850;
@@ -60,7 +59,7 @@ body {
 .btn {
   height: 55px;
   padding: 12px 24px;
-  margin-bottom: 20px;
+
 
   border: none;
   border-radius: 10px;
@@ -89,7 +88,7 @@ body {
 /* קו מפריד בין אזורים */
 div .divider {
   height: 4px;
-  width: 85%;
+  width: 90%;
 
   margin: 0 auto;
 
@@ -115,6 +114,8 @@ div .divider {
 /* אזור החיפוש */
 .container .search-section {
   gap: 15px;
+
+  margin-top: 30px;
 
   display: flex;
   justify-content: center;
@@ -340,7 +341,7 @@ div .divider {
 
   .container {
     width: 92%;
-    margin: 20px auto;
+    margin: 0 auto;
   }
 
   .container .search-section {
