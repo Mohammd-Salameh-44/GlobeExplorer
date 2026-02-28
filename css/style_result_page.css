@@ -335,13 +335,7 @@ div .divider {
     font-size: 1rem;
   }
 
-  .btn {
-    width: 100px;
-    height: 48px;
-    font-size: 1.1rem;
-    border-radius: 12px;
-    padding: 0 18px;
-  }
+
 
   div .divider {
     width: 95%;
@@ -373,6 +367,11 @@ div .divider {
 
   .search-section .btn {
     width: 25%;
+    /* width: 100px; */
+    height: 48px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    padding: 0 18px;
 
   }
 
