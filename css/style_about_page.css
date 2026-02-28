@@ -105,7 +105,7 @@ div .divider {
 /* ===== About Section ===== */
 /* אזור פרטים אישיים */
 .about-container {
-    width: 80%;
+    width: 90%;
 
     margin: 40px auto;
 
@@ -184,8 +184,7 @@ div .divider {
 @media (max-width: 500px) {
 
     .app-header {
-        padding: 15px ;
-        /* margin: 5px 0; */
+        padding: 15px;
     }
 
     .app-header .app-title {
@@ -205,15 +204,12 @@ div .divider {
         /* הרחבת הקו */
     }
 
-    .container {
-        width: 92%;
-        margin: 20px auto;
-    }
+
 
     .about-container {
-        width: 90%;
+        width: 92%;
         padding: 20px;
-        margin-top: 10px;
+        margin-top: 30px;
         border-radius: 15px;
     }
 

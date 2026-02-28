@@ -294,7 +294,7 @@ div .divider {
 
   .app-header {
     padding: 20px;
-    margin: 0 15px;
+
   }
 
   .app-header .app-title {
@@ -313,12 +313,10 @@ div .divider {
 /* התאמות למסכים קטנים */
 @media (max-width: 500px) {
 
-  
+
 
   .app-header {
-    gap: 15px;
-    padding: 15px 7px 15px 7px;
-    /* margin: 5px 0; */
+    padding: 15px;
   }
 
   .app-header .app-title {
