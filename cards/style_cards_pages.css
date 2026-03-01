@@ -104,7 +104,7 @@ div .divider {
 
 /* ===== About Section ===== */
 /* אזור פרטים אישיים */
-.about-container {
+.info-container {
     width: 90%;
 
     margin: 40px auto;
@@ -126,7 +126,7 @@ div .divider {
 }
 
 /* כותרת של אזור הפרטים */
-.about-container h2 {
+.info-container h2 {
     font-size: 2.4rem;
     font-weight: 850;
 
@@ -136,7 +136,7 @@ div .divider {
 }
 
 /* רשימת פרטים אישיים */
-.about-container p {
+.info-container p {
     font-size: 1.3rem;
     line-height: 1.6;
 
@@ -170,16 +170,16 @@ div .divider {
         font-size: 1.2rem;
     }
 
-    .about-container {
+    .info-container {
         padding: 25px;
         /* הקטנת padding */
     }
 
-    .about-container h2 {
+    .info-container h2 {
         font-size: 1.9rem;
     }
 
-    .about-container p {
+    .info-container p {
         font-size: 1.1rem;
     }
 }
@@ -221,11 +221,11 @@ div .divider {
         border-radius: 15px;
     }
 
-    .about-container h2 {
+    .info-container h2 {
         font-size: 2rem;
     }
 
-    .about-container ul {
+    .info-container ul {
         font-size: 1rem;
         line-height: 1.5;
         margin-left: 20px;
