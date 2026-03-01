@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- הגדרת קידוד תווים -->
+    <meta charset="utf-8" />
+
+    <!-- הגדרה לרספונסיביות במובייל -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+    <!-- צבע ערכת נושא למובייל -->
+    <meta name="theme-color" content="#4e5280" />
+
+    <!-- כותרת הדף -->
+    <title>GlobeExplorer</title>
+
+    <!-- תיאור הדף עבור מנועי חיפוש -->
+    <meta name="description" content="GlobeExplorer provides travel information for any city worldwide." />
+
+    <!-- קישור לקובץ עיצוב של עמוד ה-About -->
+    <link rel="stylesheet" href="../style_cards_pages.css" />
+
+    <!-- טעינת פונטים חיצוניים -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;800&display=swap" rel="stylesheet" />
+
+    <!-- חיבור קובץ JavaScript -->
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- כותרת עליונה עם ניווט -->
+    <header class="app-header">
+
+        <!-- לחיצה על שם האתר מחזירה לדף הראשי -->
+        <h1 class="app-title" title="The title of the site." onclick="window.location.href='../../index.html'">
+            GlobeExplorer
+        </h1>
+
+        <!-- כפתור חזרה לדף הבית -->
+        <button id="btnHome" class="btn" type="button" onclick="window.location.href='../../index.html'"
+            title="Return to the main page.">
+            Home
+        </button>
+
+    </header>
+
+    <!-- קו מפריד -->
+    <div>
+        <hr class="divider">
+    </div>
+
+    <!-- תוכן הכרטיס: Hotels -->
+    <div class="about-container">
+
+        <!-- כותרת הפיצ'ר -->
+        <h2>Hotels</h2>
+
+        <!-- פסקאות הסבר על מקור המידע ואופן הפעולה -->
+        <p>
+            The Hotels feature provides an overview of accommodation options available
+            in the selected city. It enables users to explore hotel-related information
+            before making travel arrangements.
+        </p>
+
+        <p>
+            Hotel data is collected using the Wikipedia API by searching for pages
+            associated with hotels in the chosen city. The system retrieves summarized
+            information about the most relevant results.
+        </p>
+
+        <p>
+            Each hotel entry includes a short description and a link to the original
+            Wikipedia page, allowing users to access more detailed information when needed.
+        </p>
+
+        <p>
+            This feature assists travelers in making informed decisions about lodging
+            options and enhances the overall planning experience by centralizing
+            travel-related information in one place.
+        </p>
+
+</body>
+
+</html>

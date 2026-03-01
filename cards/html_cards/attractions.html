@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- הגדרת קידוד תווים -->
+    <meta charset="utf-8" />
+
+    <!-- הגדרה לרספונסיביות במובייל -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+    <!-- צבע ערכת נושא למובייל -->
+    <meta name="theme-color" content="#4e5280" />
+
+    <!-- כותרת הדף -->
+    <title>GlobeExplorer</title>
+
+    <!-- תיאור הדף עבור מנועי חיפוש -->
+    <meta name="description" content="GlobeExplorer provides travel information for any city worldwide." />
+
+    <!-- קישור לקובץ עיצוב של עמוד ה-About -->
+    <link rel="stylesheet" href="../style_cards_pages.css" />
+
+    <!-- טעינת פונטים חיצוניים -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;800&display=swap" rel="stylesheet" />
+
+    <!-- חיבור קובץ JavaScript -->
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- כותרת עליונה עם ניווט -->
+    <header class="app-header">
+
+        <!-- לחיצה על שם האתר מחזירה לדף הראשי -->
+        <h1 class="app-title" title="The title of the site." onclick="window.location.href='../../index.html'">
+            GlobeExplorer
+        </h1>
+
+        <!-- כפתור חזרה לדף הבית -->
+        <button id="btnHome" class="btn" type="button" onclick="window.location.href='../../index.html'"
+            title="Return to the main page.">
+            Home
+        </button>
+
+    </header>
+
+    <!-- קו מפריד -->
+    <div>
+        <hr class="divider">
+    </div>
+
+    <!-- תוכן הכרטיס: Attractions -->
+    <div class="about-container">
+
+        <!-- כותרת הפיצ'ר -->
+        <h2>Attractions</h2>
+
+        <!-- פסקאות הסבר על מקור המידע ואופן השימוש -->
+        <p>
+            The Attractions feature allows users to discover the most popular landmarks,
+            historical sites, and tourist destinations in the selected city. It helps users
+            gain a better understanding of what the city has to offer.
+        </p>
+
+        <p>
+            The system retrieves attraction information using the Wikipedia public API.
+            It searches for relevant pages related to the city's attractions and selects
+            the top results based on relevance.
+        </p>
+
+        <p>
+            For each attraction, the system extracts a summarized description and provides
+            a direct link to the full Wikipedia article. This allows users to read additional
+            details if they are interested in learning more.
+        </p>
+
+        <p>
+            By integrating external knowledge sources, this feature enriches the user
+            experience and supports travel planning by offering educational and cultural
+            insight into the selected destination.
+        </p>
+
+</body>
+
+</html>

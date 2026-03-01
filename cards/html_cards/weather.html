@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- הגדרת קידוד תווים -->
+    <meta charset="utf-8" />
+
+    <!-- הגדרה לרספונסיביות במובייל -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+    <!-- צבע ערכת נושא למובייל -->
+    <meta name="theme-color" content="#4e5280" />
+
+    <!-- כותרת הדף -->
+    <title>GlobeExplorer</title>
+
+    <!-- תיאור הדף עבור מנועי חיפוש -->
+    <meta name="description" content="GlobeExplorer provides travel information for any city worldwide." />
+
+    <!-- קישור לקובץ עיצוב של עמוד ה-About -->
+    <link rel="stylesheet" href="../style_cards_pages.css" />
+
+    <!-- טעינת פונטים חיצוניים -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;800&display=swap" rel="stylesheet" />
+
+    <!-- חיבור קובץ JavaScript -->
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- כותרת עליונה עם ניווט -->
+    <header class="app-header">
+
+        <!-- לחיצה על שם האתר מחזירה לדף הראשי -->
+        <h1 class="app-title" title="The title of the site." onclick="window.location.href='../../index.html'">
+            GlobeExplorer
+        </h1>
+
+        <!-- כפתור חזרה לדף הבית -->
+        <button id="btnHome" class="btn" type="button" onclick="window.location.href='../../index.html'"
+            title="Return to the main page.">
+            Home
+        </button>
+
+    </header>
+
+    <!-- קו מפריד -->
+    <div>
+        <hr class="divider">
+    </div>
+
+    <!-- תוכן הכרטיס: Weather (הסבר למשתמש על הפיצ'ר) -->
+    <div class="about-container">
+
+        <!-- כותרת הכרטיס -->
+        <h2>Weather</h2>
+
+        <!-- פסקאות הסבר על מקור המידע ואיך הוא מוצג -->
+        <p>
+            The Weather feature provides real-time information about the current weather
+            conditions in the selected city. It displays essential data such as temperature,
+            weather condition, humidity level, and wind speed.
+        </p>
+
+        <p>
+            This information is retrieved from the OpenWeather API, which is a reliable
+            public weather data service. The system sends an asynchronous request to the
+            API using the city name entered by the user and receives updated data in JSON format.
+        </p>
+
+        <p>
+            After receiving the response, the data is processed and dynamically rendered
+            on the page using JavaScript. This ensures that users receive accurate and
+            up-to-date weather information without reloading the page.
+        </p>
+
+        <p>
+            This feature is especially useful for travelers who want to check the climate
+            conditions before visiting a destination, helping them plan their trip more
+            efficiently and comfortably.
+        </p>
+
+    </div>
+
+</body>
+
+</html>

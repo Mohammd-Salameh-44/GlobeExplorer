@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- הגדרת קידוד תווים -->
+    <meta charset="utf-8" />
+
+    <!-- הגדרה לרספונסיביות במובייל -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+    <!-- צבע ערכת נושא למובייל -->
+    <meta name="theme-color" content="#4e5280" />
+
+    <!-- כותרת הדף -->
+    <title>GlobeExplorer</title>
+
+    <!-- תיאור הדף עבור מנועי חיפוש -->
+    <meta name="description" content="GlobeExplorer provides travel information for any city worldwide." />
+
+    <!-- קישור לקובץ עיצוב של עמוד ה-About -->
+    <link rel="stylesheet" href="../style_cards_pages.css" />
+
+    <!-- טעינת פונטים חיצוניים -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;800&display=swap" rel="stylesheet" />
+
+    <!-- חיבור קובץ JavaScript -->
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- כותרת עליונה עם ניווט -->
+    <header class="app-header">
+
+        <!-- לחיצה על שם האתר מחזירה לדף הראשי -->
+        <h1 class="app-title" title="The title of the site." onclick="window.location.href='../../index.html'">
+            GlobeExplorer
+        </h1>
+
+        <!-- כפתור חזרה לדף הבית -->
+        <button id="btnHome" class="btn" type="button" onclick="window.location.href='../../index.html'"
+            title="Return to the main page.">
+            Home
+        </button>
+
+    </header>
+
+    <!-- קו מפריד -->
+    <div>
+        <hr class="divider">
+    </div>
+
+    <!-- תוכן הכרטיס: Map -->
+    <div class="about-container">
+
+        <!-- כותרת הפיצ'ר -->
+        <h2>Map</h2>
+
+        <!-- פסקאות הסבר על מקור המידע ואופן הפעולה -->
+        <p>
+            The Map feature visually presents the geographic location of the selected city
+            using an embedded OpenStreetMap interface. It allows users to see the exact
+            position of the city on a map.
+        </p>
+
+        <p>
+            The system first uses the Nominatim Geocoding service to convert the city name
+            into geographic coordinates, specifically latitude and longitude values.
+            These coordinates are essential for accurately locating the city.
+        </p>
+
+        <p>
+            After retrieving the coordinates, the application dynamically generates an
+            embedded map with a marker indicating the city’s exact location. Users can
+            interact with the map and explore surrounding areas.
+        </p>
+
+        <p>
+            This feature enhances spatial understanding and provides a visual context
+            for the city, making the application more interactive and informative.
+        </p>
+
+</body>
+
+</html>

@@ -120,14 +120,14 @@ div .divider {
     display: flex;
     flex-direction: column;
 
-    justify-content: left;
-    align-items: left;
-    text-align: left;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* כותרת של אזור הפרטים */
 .about-container h2 {
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: 850;
 
     margin-bottom: 10px;
@@ -136,13 +136,15 @@ div .divider {
 }
 
 /* רשימת פרטים אישיים */
-.about-container ul {
+.about-container p {
     font-size: 1.3rem;
     line-height: 1.6;
 
-    margin: 0 0 10px 30px;
+    margin: 10px 15px 10px 15px;
 
     color: #4e5280;
+
+    text-align: left;
 }
 
 
@@ -174,10 +176,10 @@ div .divider {
     }
 
     .about-container h2 {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
 
-    .about-container ul {
+    .about-container p {
         font-size: 1.1rem;
     }
 }
